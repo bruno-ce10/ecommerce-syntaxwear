@@ -51,3 +51,11 @@ input, button, textarea, select {
     scroll-behavior: auto !important;
   }
 }
+
+a{
+    text-decoration: none;
+}
+
+ul, ol{
+    list-style: none;
+}
