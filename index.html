@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>SyntaxWear - Tênis e Sneakers Online</title>
+  <meta name="description"
+    content="Compre tênis e sneakers online na SyntaxWear. Encontre os melhores modelos para todas as ocasiões com entrega rápida e segura.">
+
   <link rel="stylesheet" href="./css/reset.css">
 
   <link rel="stylesheet" href="./css/variables.css">
@@ -15,85 +18,105 @@
 
   <link rel="stylesheet" href="./css/style.css">
 
+  <link rel="stylesheet" href="./css/categorias.css">
+
 </head>
 
 <body>
+  <header class="site-header">
+    <h1 class="logo">
+      <a href="/" title="SyntaxWear - Tênis e Sneakers Online">
+        <img src="./img/logo/logo.svg" alt="SyntaxWear - Tênis e Sneakers Online">
+      </a>
+    </h1>
 
-</body>
-<header class="site-header">
-  <h1 class="logo">
-    <a href="/" title="SyntaxWear - Tênis e Sneakers Online">
-      <img src="./img/logo/logo.svg" alt="SyntaxWear - Tênis e Sneakers Online">
-    </a>
-  </h1>
+    <nav class="nav-center" aria-label="Categorias Principais">
+      <ul>
+        <li><a href="#">Masculino</a></li>
+        <li><a href="#">Feminino</a></li>
+        <li><a href="#">Outlet</a></li>
+      </ul>
+    </nav>
 
-  <nav class="nav-center" aria-label="Categorias Principais">
-    <ul>
-      <li><a href="#">Masculino</a></li>
-      <li><a href="#">Feminino</a></li>
-      <li><a href="#">Outlet</a></li>
-    </ul>
-  </nav>
+    <nav class="nav-right" aria-label="Acesso Rápido">
+      <ul>
+        <li><a href="#">Nossas lojas</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li>
+          <a href="#" aria-label="Minha conta">
+            <img src="./img/icons/user.svg" alt="Minha conta">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Ajuda">
+            <img src="./img/icons/help.svg" alt="Ajuda">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Carrinho">
+            <img src="./img/icons/bag.svg" alt="Carrinho">
+          </a>
+        </li>
+      </ul>
 
-  <nav class="nav-right" aria-label="Acesso Rápido">
-    <ul>
-      <li><a href="#">Nossas lojas</a></li>
-      <li><a href="#">Sobre</a></li>
-      <li>
-        <a href="#" aria-label="Minha conta">
-          <img src="./img/icons/user.svg" alt="Minha conta">
-        </a>
-      </li>
-      <li>
-        <a href="#" aria-label="Ajuda">
-          <img src="./img/icons/help.svg" alt="Ajuda">
-        </a>
-      </li>
-      <li>
-        <a href="#" aria-label="Carrinho">
-          <img src="./img/icons/bag.svg" alt="Carrinho">
-        </a>
-      </li>
-    </ul>
+    </nav>
+  </header>
 
-  </nav>
-</header>
-
-<main>
-  <section class="hero">
-    <div class="hero-overlay">
-      <div class="hero-content">
-        <span class="hero-subtitle">Kryspton One</span>
-        <h2 class="hero-title">Tranforme qualquer passo em presença.</h2>
-        <div class="hero-buttons">
-          <a class="btn btn-outline" href="#">Ver modelos</a>
-          <a class="btn btn-filled" href="#">Comprar</a>
+  <main>
+    <section class="hero">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <span class="hero-subtitle">Kryspton One</span>
+          <h2 class="hero-title">Tranforme qualquer passo em presença.</h2>
+          <div class="hero-buttons">
+            <a class="btn btn-outline" href="#">Ver modelos</a>
+            <a class="btn btn-filled" href="#">Comprar</a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="categorias" class="categorias" aria-label="Seção de categorias de tênis">
-    <!-- categorias de tênis -->
-  </section>
+    <section class="categoria-section">
+      <div class="categorias-card casual">
+        <a href="#" class="categoria-link">
+          <span class="overlay"></span>
+          <span class="categoria-name btn btn-outline">Casual</span>
+        </a>
+      </div>
 
-  <section id="destaques" class="destaques" aria-label="Produtos em destaque">
-    <div class="produtos-grid">
-      <!-- grid com produtos em destaque -->
-    </div>
-  </section>
-</main>
+      <div class="categorias-card esporte">
+        <a href="#" class="categoria-link">
+          <span class="overlay"></span>
+          <span class="categoria-name btn btn-outline">Esporte</span>
+        </a>
+      </div>
 
-<footer class="site-footer" role="contentinfo">
-  <div class="container footer-inner">
-    <div class="contato" aria-label="Informações de contato">
-      <!-- informações de contato -->
+      <div class="categorias-card moderno">
+        <a href="#" class="categoria-link">
+          <span class="overlay"></span>
+          <span class="categoria-name btn btn-outline">Moderno</span>
+        </a>
+      </div>
+
+      <div class="categorias-card futurista">
+        <a href="#" class="categoria-link">
+          <span class="overlay"></span>
+          <span class="categoria-name btn btn-outline">Futurista</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="contato" aria-label="Informações de contato">
+        <!-- informações de contato -->
+      </div>
+      <div class="links-uteis" aria-label="Links úteis">
+        <!-- links e navegação do rodapé -->
+      </div>
     </div>
-    <div class="links-uteis" aria-label="Links úteis">
-      <!-- links e navegação do rodapé -->
-    </div>
-  </div>
-</footer>
+  </footer>
 </body>
 
 </html>

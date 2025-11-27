@@ -60,6 +60,7 @@
 .btn-filled{
     background-color: white;
     color: rebeccapurple;
+    line-height: 1.50rem;
 }
 
 .btn:hover{
