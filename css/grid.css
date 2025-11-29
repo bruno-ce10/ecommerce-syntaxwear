@@ -1,0 +1,76 @@
+.card{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+}
+
+.highlight{
+    grid-area: top1;
+    background-image: url(../img/produtos/card_imagem.jpg);
+}
+
+.sneaker-purple{
+    grid-area: top2;
+    background-image: url(../img/produtos/roxo-verde-grid.jpg);
+}
+
+.model{
+    grid-area: midL;
+    background-image: url(../img/produtos/modelo-feminino.jpg);
+}
+
+.sneaker-color{
+    grid-area: midR;
+    background-image: url(../img/produtos/futurista-grid.jpg);
+}
+
+.sneaker-white{
+    grid-area: bottomL;
+    background-image: url(../img/produtos/preto-branco-grid.jpg);
+}
+
+.sneaker-silver{
+    grid-area: bottomR;
+    background-image: url(../img/produtos/moderno-grid.jpg);
+}
+
+.grid-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas:
+    "highlight highlight sneaker-purple sneaker-purple"
+    "highlight highlight model sneaker-color"
+    "sneaker-white sneaker-white model sneaker-silver";
+    gap: 30px;
+}
+
+.top1-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card-title{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.card-subtitle{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.cta-group{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
