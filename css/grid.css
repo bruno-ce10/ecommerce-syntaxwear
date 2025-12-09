@@ -77,7 +77,7 @@
 
 @media (max-width: 768px){
     .grid-section{
-        grid-template-columns: 1fr, 1fr;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, auto);
         grid-template-areas:
         "highlight highlight"
@@ -87,6 +87,8 @@
         "sneaker-purple sneaker-purple";
         gap: 0.625rem;
         max-width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
     }
 }
 
@@ -95,9 +97,9 @@
 }
 
 .model{
-    min-height: 370px;
+    min-height: 450px;
 }
 
 .sneaker-white, .sneaker-purple{
-    min-height: 190px;
+    min-height: 250px;
 }
