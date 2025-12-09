@@ -22,6 +22,8 @@
 
   <link rel="stylesheet" href="./css/grid.css">
 
+  <link rel="stylesheet" href="./css/footer.css">
+
 </head>
 
 <body>
@@ -32,35 +34,42 @@
       </a>
     </h1>
 
-    <nav class="nav-center" aria-label="Categorias Principais">
-      <ul>
-        <li><a href="#">Masculino</a></li>
-        <li><a href="#">Feminino</a></li>
-        <li><a href="#">Outlet</a></li>
-      </ul>
-    </nav>
+    <input type="checkbox" class="menu-toggle" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+      <img src="./img/icons/hamburguer.svg" alt="menu conta">
+    </label>
 
-    <nav class="nav-right" aria-label="Acesso Rápido">
-      <ul>
-        <li><a href="#">Nossas lojas</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li>
-          <a href="#" aria-label="Minha conta">
-            <img src="./img/icons/user.svg" alt="Minha conta">
-          </a>
-        </li>
-        <li>
-          <a href="#" aria-label="Ajuda">
-            <img src="./img/icons/help.svg" alt="Ajuda">
-          </a>
-        </li>
-        <li>
-          <a href="#" aria-label="Carrinho">
-            <img src="./img/icons/bag.svg" alt="Carrinho">
-          </a>
-        </li>
-      </ul>
+    <nav class="nav-container">
 
+      <nav class="nav-center" aria-label="Categorias Principais">
+        <ul>
+          <li><a href="#">Masculino</a></li>
+          <li><a href="#">Feminino</a></li>
+          <li><a href="#">Outlet</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-right" aria-label="Acesso Rápido">
+        <ul>
+          <li><a href="#">Nossas lojas</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li>
+            <a href="#" aria-label="Minha conta">
+              <img src="./img/icons/user.svg" alt="Minha conta">
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Ajuda">
+              <img src="./img/icons/help.svg" alt="Ajuda">
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Carrinho">
+              <img src="./img/icons/bag.svg" alt="Carrinho">
+            </a>
+          </li>
+        </ul>
+      </nav>
     </nav>
   </header>
 
@@ -128,14 +137,75 @@
     </section>
   </main>
 
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-inner">
-      <div class="contato" aria-label="Informações de contato">
-        <!-- informações de contato -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-right">
+        <form class="newsletter-form">
+          <label for="newsletter-email">Inscreva-se em nosso e-mail</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Seu e-mail">
+        </form>
+
+        <div class="footer-social">
+          <span>Redes sociais</span>
+          <ul>
+            <li><a href="#"><img src="./img/icons/instagram.svg" alt="Instagram"></a></li>
+            <li><a href="#"><img src="./img/icons/whatsapp.svg" alt="Whatsapp"></a></li>
+            <li><a href="#"><img src="./img/icons/tiktok.svg" alt="Tiktok"></a></li>
+            <li><a href="#"><img src="./img/icons/facebook.svg" alt="Facebook"></a></li>
+          </ul>
+        </div>
       </div>
-      <div class="links-uteis" aria-label="Links úteis">
-        <!-- links e navegação do rodapé -->
-      </div>
+
+      <nav class="footer-nav">
+        <ul>
+          <li>
+            <strong>Masculino</strong>
+            <ul>
+              <li><a href="#">Casual</a></li>
+              <li><a href="#">Esporte</a></li>
+              <li><a href="#">Moderno</a></li>
+              <li><a href="#">Futurista</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Feminino</strong>
+            <ul>
+              <li><a href="#">Casual</a></li>
+              <li><a href="#">Esporte</a></li>
+              <li><a href="#">Moderno</a></li>
+              <li><a href="#">Futurista</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Outlet</strong>
+            <ul>
+              <li><a href="#">Masculino</a></li>
+              <li><a href="#">Feminino</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Nossas lojas</strong>
+            <ul>
+              <li><a href="#">Loja física</a></li>
+              <li><a href="#">Loja online</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Sobre nós</strong>
+            <ul>
+              <li><a href="#">Quem somos</a></li>
+              <li><a href="#">Missão</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-copy">
+      copyright © 2024 SyntaxWear. Todos os direitos reservados.
     </div>
   </footer>
 </body>

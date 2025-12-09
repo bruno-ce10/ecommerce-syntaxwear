@@ -13,6 +13,7 @@
 ul[role='list'], ol[role='list'], ul, ol {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 /* Smooth scrolling */
@@ -30,7 +31,6 @@ html:focus-within {
 /* Make images and media easier to work with */
 img, picture {
   max-width: 100%;
-  display: block;
 }
 
 /* Inherit fonts for form elements */
